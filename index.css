@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(49, 50, 59);
+}
+.calculate {
+  margin: 0 auto;
+  max-width: 200px;
+  margin-top: 200px;
+  background-color: gainsboro;
+  max-width: 500px;
+  max-height: 600px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.btn-wr {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.long {
+  grid-area: 2 / 5 / 5 / 6;
+}
+.text-wr {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgb(238, 238, 238);
+  border: 1px solid gray;
+  display: flex;
+  padding: 4px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.btn {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 3px;
+}
