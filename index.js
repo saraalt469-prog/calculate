@@ -8,12 +8,12 @@ function clickButton(value) {
   document.getElementById("text").textContent = value;
 
   if ("0123456789.".includes(value)) {
-    if (lastResult !== "0 " && operation === "") {
-      clearAll();
-      lastResult = "0";
-    }
+    // if (lastResult !== "0 " && operation === "") {
+    //   clearAll();
+    //   lastResult = "0";
+    // }
     one += value;
-  } else if ("+-/*±".includes(value)) {
+  } else if ("+-/*±^2^3√∛n√".includes(value)) {
     if (one === "" && lastResult !== "0") {
       two = lastResult;
       one = "";
@@ -63,6 +63,27 @@ function calculate(silent = false) {
       break;
     case "±":
       result = -result;
+      break;
+    case "^2":
+      result = num1 ** 2;
+      break;
+    case "^3":
+      result = num1 ** 3;
+      break;
+    case "^":
+      result = num1 ** num2;
+      break;
+    case "√":
+      result = Math.sqrt(num1);
+      break;
+    case "√":
+      result = Math.sqrt(num1);
+      break;
+    case "∛":
+      result = Math.cbrt(num1);
+      break;
+    case "n√":
+      result = num1 ** (1 / num2);
       break;
     default:
       return;
